@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GSC ONE Dev Project Opening Template   <meta name="description" content="GSC ONE Dev Project Opening Template - Create structured project opening announcements for developer recruitment.">
+    <title>GSC ONE Dev - Project Opening Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <div class="bg-orb bg-orb-1"></div>
+      <div class="bg-orb bg-orb-2"></div>
+      <div class="bg-orb bg-orb-3"></div>
+      <header class="hero-header">
+        <div class="hero-badge">GSC ONE Dev</div>
+        <h1 class="hero-title">Project Opening Template</h1>
+      <p class="hero-subtitle">Fill in the fields below to generate a structured project opening announcement for developer recruitment.</p>
+      </header>    <main class="form-container">
+        <form id="projectForm" autocomplete="off">
+          <section class="form-section" id="section-overview">
+            <div class="section-header">
+              <span class="section-number">01</span>
+              <div>
+                <h2 class="section-title">Project Overview</h2>
+                <p class="section-desc">Define the project scope, business value, and timeline.</p>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label for="projectName">Project Name</label>
+                <input type="text" id="projectName" name="projectName" placeholder="e.g., Supply Chain Visibility Dashboard" required>
+              </div>
+              <div class="form-group full-width">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="3" placeholder="Provide a brief, 2-3 sentence overview of the project, the business problem it solves, and the expected solution/outcome." required></textarea>
+              </div>
+              <div class="form-group full-width">
+                <label for="businessValue">Business Value / Impact</label>
+                <textarea id="businessValue" name="businessValue" rows="2" placeholder="Explain the expected ROI, efficiency gains, or strategic importance of this project."></textarea>
+              </div>
+              <div class="form-group">
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" name="startDate">
+              </div>
+            <div class="form-group">
+                <label for="endDate">End Date / Estimated Duration</label>
+              <input type="date" id="endDate" name="endDate">
+              </div>
+            </div>
+          </section>
+          <section class="form-section" id="section-leadership">
+            <div class="section-header">
+              <span class="section-number">02</span>
+              <div>
+                <h2 class="section-title">Project Leadership Team</h2>
+              <p class="section-desc">Identify the key leaders driving this project.</p>
+              </div>
+          </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="functionOwnerName">Global Function Owner - Name</label>
+                <input type="text" id="functionOwnerName" name="functionOwnerName" placeholder="Full name">
+              </div>
+              <div class="form-group">
+                <label for="functionOwnerTitle">Global Function Owner - Title</label>
+                <input type="text" id="functionOwnerTitle" name="functionOwnerTitle" placeholder="Job title">
+              </div>
+              <div class="form-group">
+                <label for="productOwnerName">Product Owner - Name</label>
+                <input type="text" id="productOwnerName" name="productOwnerName" placeholder="Full name">
+              </div>
+              <div class="form-group">
+                <label for="productOwnerTitle">Product Owner - Title</label>
+                <input type="text" id="productOwnerTitle" name="productOwnerTitle" placeholder="Job title">
+              </div>
+              <div class="form-group">
+                <label for="scrumMasterName">Scrum Master (GSC DAIA Team) - Name</label>
+                <input type="text" id="scrumMasterName" name="scrumMasterName" placeholder="Full name">
+              </div>
+              <div class="form-group">
+                <label for="scrumMasterTitle">Scrum Master (GSC DAIA Team) - Title</label>
+                <input type="text" id="scrumMasterTitle" name="scrumMasterTitle" placeholder="Job title">
+              </div>
+            </div>
+          </section>        <section class="form-section" id="section-scope">
+            <div class="section-header">
+              <span class="section-number">03</span>
+              <div>
+                <h2 class="section-title">Project Scope &amp; Alignment</h2>
+                <p class="section-desc">In alignment with the "ONE Dev" to HIVE principles, prioritize developers who match the following scope.</p>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label for="targetFunctions">Target Function(s)</label>
+                <input type="text" id="targetFunctions" name="targetFunctions" placeholder="e.g., Planning, Logistics, Procurement, Manufacturing">
+                <span class="field-hint">Function-matched: Matching your functional background helps reduce the learning curve.</span>
+              </div>
+              <div class="form-group full-width">
+                <label for="targetDivisions">Target Division(s) / Region(s)</label>
+                <input type="text" id="targetDivisions" name="targetDivisions" placeholder="e.g., EU, North America, Latin America, Global">
+                <span class="field-hint">Division-related: Optimizes for time zones and ensures visibility at the local/division level.</span>
+              </div>
+            </div>
+          </section>
+          <section class="form-section" id="section-personas">
+            <div class="section-header">
+              <span class="section-number">04</span>
+              <div>
+                <h2 class="section-title">Open Developer Personas &amp; Requirements</h2>
+                <p class="section-desc">Define the "ONE Dev" developer personas to recruit for this project.</p>
+            </div>
+          </div>
+            <div id="personaContainer">
+              <div class="persona-card" data-persona-index="1">
+                <div class="persona-card-header">
+                  <span class="persona-badge">Persona 1</span>
+                  <button type="button" class="btn-remove-persona" title="Remove persona" style="display:none;">&times;</button>
+                </div>
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label>Persona Name / Role</label>
+                    <input type="text" name="personaName_1" placeholder="e.g., Data Engineer, App Builder, Automation Developer">
+                  </div>
+                  <div class="form-group">
+                    <label>Number of Developers Required</label>
+                    <input type="number" name="personaCount_1" placeholder="e.g., 2" min="1">
+                  </div>
+                  <div class="form-group full-width">
+                    <label>Certifications Required</label>
+                    <input type="text" name="personaCerts_1" placeholder="e.g., Google Cloud Certified, AppSheet Fundamentals, or 'None'">
+                  </div>
+                  <div class="form-group full-width">
+                    <label>Function Expertise</label>
+                    <input type="text" name="personaExpertise_1" placeholder="e.g., Deep understanding of supply chain logistics, familiarity with SAP data structures">
+                  </div>
+                  <div class="form-group full-width">
+                    <label>Project Experience Required</label>
+                  <input type="text" name="personaExperience_1" placeholder="e.g., Previous experience building financial dashboards, min. 1 year in Agile/Scrum">
+                  </div>
+                  <div class="form-group full-width">
+                    <label>Technical Skills / Tech Stack</label>
+                    <input type="text" name="personaTech_1" placeholder="e.g., Python, SQL, React, low-code/no-code platforms">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" id="addPersonaBtn" class="btn-add-persona">
+              <span class="btn-icon">+</span> Add Another Persona
+          </button>
+        </section>        <section class="form-section" id="section-capacity">
+          <div class="section-header">
+            <span class="section-number">05</span>
+            <div>
+              <h2 class="section-title">Capacity &amp; Commitment Expectations</h2>
+              <p class="section-desc">Set expectations for time commitment and priority alignment.</p>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label for="expectedCapacity">Expected Capacity</label>
+                <input type="text" id="expectedCapacity" name="expectedCapacity" placeholder="e.g., 8-10 hours per week / 25% allocation">
+                <span class="field-hint">Capacity-balanced: You must be able to balance this time requirement between your routine daily role and this strategic project assignment.</span>
+              </div>
+              <div class="form-group full-width">
+                <label>Commitment Alignment</label>
+                <div class="info-callout">
+                  <strong>Commitment-aligned:</strong> If selected, strategic project work must be formally aligned between the HIVE Keeper and your Division/Local Leadership. This ensures capacity and priorities are managed, and project work will be included as an individual objective for your performance review.
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="form-section" id="section-apply">
+            <div class="section-header">
+              <span class="section-number">06</span>
+              <div>
+                <h2 class="section-title">How to Apply (Next Steps)</h2>
+                <p class="section-desc">Provide application details following the "ONE Dev" to HIVE workflow.</p>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label for="applicationLink">Application Link</label>
+                <input type="url" id="applicationLink" name="applicationLink" placeholder="https://forms.google.com/...  or Jira link / email address">
+              </div>
+              <div class="form-group">
+                <label for="applicationDeadline">Application Deadline</label>
+                <input type="date" id="applicationDeadline" name="applicationDeadline">
+              </div>
+            </div>
+          </section>
+          <div class="form-actions">
+            <button type="button" id="previewBtn" class="btn btn-primary">
+              <span>Preview Output</span>
+            </button>
+            <button type="button" id="copyBtn" class="btn btn-secondary">
+              <span>Copy to Clipboard</span>
+          </button>
+          <button type="reset" class="btn btn-ghost">
+            <span>Reset Form</span>
+          </button>
+          </div>
+        </form>
+      </main>
+      <div class="modal-overlay" id="previewModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Generated Project Opening</h2>
+          <button type="button" id="closeModal" class="modal-close">&times;</button>
+          </div>
+          <div class="modal-body" id="previewOutput"></div>
+          <div class="modal-footer">
+            <button type="button" id="modalCopyBtn" class="btn btn-primary">
+              <span>Copy to Clipboard</span>
+          </button>
+          <button type="button" id="modalCloseBtn" class="btn btn-ghost">Close</button>
+          </div>
+        </div>
+      </div>
+      <div class="toast" id="toast">Copied to clipboard!</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
